@@ -1,0 +1,24 @@
+pipeline {
+   agent any
+
+   stages {
+      stage ('Fetch Code') {
+
+      steps {
+        echo "Fetching Code From Git"
+            }
+          }
+    stage ('Install and Configure Apache') {
+
+      steps {
+        echo "Installing Apache"
+          }
+         }
+    stage ('Deploy Application') {
+
+      steps {
+        echo " Deploying Application"
+               }
+            }
+         }
+     }
